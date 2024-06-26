@@ -215,8 +215,11 @@
 								<h2>About Me</h2>
 							</header>
 
-							<head>
-								    <title>Change Image on Hover</title>
+							<html lang="en">
+								<head>
+								    <meta charset="UTF-8">
+								    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+								    <title>About Me</title>
 								    <style>
 								        .image-container {
 								            width: 200px;
@@ -224,9 +227,9 @@
 								            position: relative;
 								            overflow: hidden;
 								        }
-								 
+								
 								        .image-container::before {
-								            content: url(images/me1.jpeg);
+								            content: url('images/me1.jpeg');
 								            position: absolute;
 								            top: 0;
 								            left: 0;
@@ -234,12 +237,27 @@
 								            height: 100%;
 								            transition: opacity 0.3s ease-in-out;
 								        }
-								 
+								
 								        .image-container:hover::before {
-								            content: url(images/me2.jpeg);
+								            content: url('images/me2.jpeg');
 								        }
 								    </style>
-                                                          </head>
+								</head>
+								<body>
+								    <!-- About Me -->
+								    <section id="about" class="three">
+								        <div class="container">
+								            <header>
+								                <h2>About Me</h2>
+								            </header>
+								
+								            <div class="image-container"></div>
+								
+								            <p>Hello</p>
+								        </div>
+								    </section>
+								</body>
+							</html>
 
 							<p> Hello</p>
 

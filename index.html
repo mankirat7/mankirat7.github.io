@@ -215,7 +215,31 @@
 								<h2>About Me</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<head>
+								    <title>Change Image on Hover</title>
+								    <style>
+								        .image-container {
+								            width: 200px;
+								            height: 200px;
+								            position: relative;
+								            overflow: hidden;
+								        }
+								 
+								        .image-container::before {
+								            content: images/me1.jpeg;
+								            position: absolute;
+								            top: 0;
+								            left: 0;
+								            width: 100%;
+								            height: 100%;
+								            transition: opacity 0.3s ease-in-out;
+								        }
+								 
+								        .image-container:hover::before {
+								            content: images/me2.jpeg;
+								        }
+								    </style>
+                                                          </head>
 
 							<p> Hello</p>
 

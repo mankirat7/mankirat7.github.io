@@ -109,8 +109,8 @@
 								            <li>Created visualizations such as moving averages, volumes, algorithm trade, profit, forecasts, futures, and more.</li>    
 								            <li>Below are screenshots of the dashboards created:</li>
 								        </ul>
-								        <div class="row" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-								            <div class="col-4 col-12-mobile" style="margin: 10px; text-align: center;">
+								        <div class="row" style="display: flex; justify-content: center; flex-wrap: wrap;">
+								            <div class="col-12" style="margin: 10px; text-align: center;">
 								                <article class="item">
 								                    <a class="image fit"><img src="images/1.1.png" alt="" class="dashboard-image" /></a>
 								                </article>
@@ -124,11 +124,12 @@
 								
 								<style>
 								    .dashboard-image {
-								        width: 1000px;
+								        width: 100%;
+								        max-width: 1000px; /* Adjust the max-width as needed */
 								        height: auto;
 								        display: block;
 								        margin: 20px auto;
-								        border: 1px solid #000; /* Black border */
+								        border: 5px solid #000; /* Black border */
 								        padding: 10px; /* Padding inside the border */
 								        box-sizing: border-box; /* Include padding and border in the element's total width and height */
 								    }
